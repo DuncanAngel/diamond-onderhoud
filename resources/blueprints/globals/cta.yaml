@@ -1,0 +1,35 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: image
+            field:
+              max_files: 1
+              min_files: 1
+              container: assets
+              type: assets
+              display: image
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+          -
+            handle: content
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: content
+          -
+            handle: button_text
+            field:
+              type: text
+              display: button_text
+          -
+            handle: button_url
+            field:
+              type: text
+              display: button_url

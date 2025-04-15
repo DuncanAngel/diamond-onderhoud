@@ -1,0 +1,30 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: colors
+            field:
+              type: group
+              display: colors
+              fields:
+                -
+                  handle: primary
+                  field:
+                    default: '#ff0000'
+                    type: color
+                    display: primary
+                -
+                  handle: secondary
+                  field:
+                    default: '#ffffff'
+                    type: color
+                    display: secondary
+                -
+                  handle: tertairy
+                  field:
+                    default: '#000000'
+                    type: color
+                    display: tertairy

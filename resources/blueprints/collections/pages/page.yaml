@@ -1,0 +1,239 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: HERO
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: hero_img
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: hero_img
+              folder: headers
+      -
+        display: CTA
+        fields:
+          -
+            handle: cta_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: cta_image
+          -
+            handle: cta_title
+            field:
+              type: text
+              display: cta_title
+          -
+            handle: cta_content
+            field:
+              type: text
+              display: cta_content
+          -
+            handle: cta_button_text
+            field:
+              type: text
+              display: cta_button_text
+          -
+            handle: cta_button_url
+            field:
+              type: text
+              display: cta_button_url
+          -
+            handle: cta_img_left
+            field:
+              type: toggle
+              display: cta-img-left
+          -
+            handle: cta_bg_img
+            field:
+              container: assets
+              type: assets
+              display: 'cta bg img'
+              max_files: 1
+      -
+        display: GALLERY
+        fields:
+          -
+            handle: gallery_title
+            field:
+              type: text
+              display: gallery_title
+          -
+            handle: gallery_img
+            field:
+              max_files: 5
+              container: assets
+              type: assets
+              display: gallery_img
+          -
+            handle: gallery_button_text
+            field:
+              type: text
+              display: gallery_button_text
+          -
+            handle: gallery_button_url
+            field:
+              type: text
+              display: gallery_button_url
+          -
+            handle: is_external
+            field:
+              type: toggle
+              display: is_external
+      -
+        display: '1/3 2/3 TEXT'
+        fields:
+          -
+            handle: text_section
+            field:
+              type: replicator
+              display: text_section
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: text_title
+                          field:
+                            type: text
+                            display: text_title
+                        -
+                          handle: text_title_left
+                          field:
+                            type: toggle
+                            display: text_title_left
+                        -
+                          handle: text_content
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: 'text content'
+      -
+        display: HEXAGON
+        fields:
+          -
+            handle: group_title
+            field:
+              type: text
+              display: group_title
+          -
+            handle: hexagons
+            field:
+              type: replicator
+              display: HEXAGONS
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: hexagon_img
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: hexagons
+                            type: assets
+                            display: hexagon_img
+                        -
+                          handle: hexagon_title
+                          field:
+                            type: text
+                            display: hexagon_title
+                        -
+                          handle: hexagon_content
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: 'hexagon content'
+                        -
+                          handle: hexagon_img_left
+                          field:
+                            type: toggle
+                            display: hexagon_img_left
+                        -
+                          handle: hexagon_button_text
+                          field:
+                            type: text
+                            display: 'hexagon button text'
+                        -
+                          handle: hexagon_button_url
+                          field:
+                            type: text
+                            display: 'hexagon button url'
+                        -
+                          handle: is_external
+                          field:
+                            type: toggle
+                            display: is_external
+      -
+        display: FORM
+        fields:
+          -
+            handle: form_link
+            field:
+              type: text
+              display: form_link
+      -
+        display: FOOTER
+        fields:
+          -
+            handle: footer_bg_img
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'footer bg img'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

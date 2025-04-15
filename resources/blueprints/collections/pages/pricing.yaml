@@ -1,0 +1,144 @@
+title: Pricing
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: HERO
+        fields:
+          -
+            handle: hero_img
+            field:
+              container: assets
+              folder: headers
+              type: assets
+              display: hero_img
+              max_files: 1
+      -
+        display: prices
+        fields:
+          -
+            handle: price_title
+            field:
+              type: text
+              display: 'price title'
+          -
+            handle: price_content
+            field:
+              type: text
+              display: 'price content'
+          -
+            handle: prices
+            field:
+              type: replicator
+              display: prices
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: price_img
+                          field:
+                            container: assets
+                            folder: prices
+                            type: assets
+                            display: price_img
+                            max_files: 1
+                        -
+                          handle: price_title
+                          field:
+                            type: text
+                            display: 'price title'
+                        -
+                          handle: price
+                          field:
+                            type: text
+                            display: price
+                        -
+                          handle: price_content
+                          field:
+                            type: text
+                            display: price_content
+                        -
+                          handle: includes
+                          field:
+                            type: replicator
+                            display: includes
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: includes
+                                        field:
+                                          type: text
+                                          display: includes
+                        -
+                          handle: button_text
+                          field:
+                            type: text
+                            display: 'button text'
+                        -
+                          handle: button_url
+                          field:
+                            type: text
+                            display: 'button url'
+      -
+        display: FOOTER
+        fields:
+          -
+            handle: footer_bg_img
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'footer bg img'
+      -
+        display: FORM
+        fields:
+          -
+            handle: form_link
+            field:
+              type: text
+              display: form_link
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

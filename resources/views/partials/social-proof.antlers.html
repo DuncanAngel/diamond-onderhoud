@@ -1,0 +1,40 @@
+<section class="bg-black">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <dl class="grid max-w-screen-md gap-8 mx-auto text-white sm:grid-cols-3">
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl font-extrabold" id="customers">6064+</dt>
+                <dd class="font-light text-gray-500 dark:text-gray-400">Klanten</dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl font-extrabold" id="quality">100%</dt>
+                <dd class="font-light text-gray-500 dark:text-gray-400">Kwaliteit & Service</dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl font-extrabold" id="reviews">100%</dt>
+                <dd class="font-light text-gray-500 dark:text-gray-400">Reviews</dd>
+            </div>
+        </dl>
+    </div>
+</section>
+<script>
+    const animateValue = (id, start, end) => {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+
+            const progress = Math.min((timestamp - startTimestamp) / 1000, 1);
+
+            //TODO make use of jQuery
+            document.getElementById(id).html = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    //TODO Make use of jQuery
+    animateValue('quality', 0, 100);
+    animateValue('customers', 0, 6064);
+    animateValue('reviews', 0, 100);
+</script>

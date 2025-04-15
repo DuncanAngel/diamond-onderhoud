@@ -1,0 +1,22 @@
+{{ text_section:1 }}
+    {{ if text_title_left }}
+        <div class="grid col-span-3 gap-4 md:grid-cols-3 bg-black">
+            <div class="col-span-1 p-4 text-4xl text-primary-500 mx-10 ml-20 mt-5">
+                {{ text_title }}
+            </div>
+            <div class="col-span-2 p-4 text-2xl text-white mx-20 font-light">
+                {{ text_content }}
+            </div>
+        </div>
+{{ else }}
+        <div class="grid col-span-3 gap-4 md:grid-cols-3 bg-black font-light">
+            <div class="col-span-2 p-4 text-2xl text-white mx-20 w-[750px]">
+                {{ text_content }}
+            </div>
+            <div class="col-span-1 p-4 text-5xl text-primary-500 mx-10 ml-20 mt-5">
+                {{ text_title }}
+            </div>
+        </div>
+    {{ /if }}
+{{ /text_section:1 }}
+
