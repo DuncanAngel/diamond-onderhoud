@@ -5,7 +5,7 @@ title: HOME
 template: pages/home
 author: fdd841da-c4cc-40ce-b01b-886935f6568c
 updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
-updated_at: 1742056028
+updated_at: 1744995170
 is_current: true
 cta_text:
   -
@@ -42,7 +42,7 @@ hexagons:
           -
             type: text
             text: 'Hydrodippen, ook wel water-transfer-printing genoemd, is een vorm van 3D printen, waarbij elke gewenste print kan worden overgebracht op een voorwerp. Dit gebeurt door middel van wateroverdracht, waardoor elk randje en kantje netjes omsloten wordt.'
-    hexagon_img: hexagons/wat-is-hydrodip.png
+    hexagon_img: hexagons/6.png
   -
     id: m80hnmh9
     hexagon_title: 'WAARVOOR WORDT HET GEBRUIKT?'
@@ -57,7 +57,7 @@ hexagons:
           -
             type: text
             text: 'De toepassingen zijn eindeloos! In principe kan alles wat gespoten kan worden, tot een zekere grootte, ook gedipt worden. Enkele van de vele mogelijkheden zijn zoals, auto/motor-onderdelen, interieur, dashboard-delen, sturen, pedalen, schakelpoken.'
-    hexagon_img: hexagons/waarvoor-wordt-het-gebruikt-2.png
+    hexagon_img: hexagons/8.png
   -
     id: m80i832c
     hexagon_title: 'HYDRODIP PROCES'
@@ -72,7 +72,7 @@ hexagons:
           -
             type: text
             text: 'Het duurzame Hydrodip eindresultaat valt of staat aan de hand van het voorbereidend werk. het daadwerkelijk dippen betreft slechts een deel van een veelomvattend en arbeidsintensief en een precisie proces, Custom maatwerk.'
-    hexagon_img: hexagons/contact-3.png
+    hexagon_img: hexagons/9.png
   -
     id: m80i8rm4
     hexagon_img_left: false
@@ -87,16 +87,16 @@ hexagons:
           -
             type: text
             text: 'De prijzen zijn afhankelijk van o.a de staat, vormgeving, specifieke wensen en eventueel meerwerk. Zijn er beschadigingen, dan zullen deze door ons hersteld worden om een kwalitatief eindresultaat te kunnen garanderen. Klant is koning.'
-    hexagon_img: hexagons/prijsindicatie.png
+    hexagon_img: hexagons/10.png
 group_title: 'WATER TRANSFER PRINTING'
 is_external: true
 cta_bg_img: hexagon-bg-footer.png
 footer_bg_img: hexagon-bg-footer.png
-hero_img: headers/hydrodip-nederland-2.jpg
 cta_image: team-hydrodip.jpg
 gallery_img:
   - projects-gallery/hydrodip3.jpg
   - projects-gallery/hydrodip6.jpg
   - projects-gallery/hydrodip4.jpg
   - projects-gallery/hydrodip1.jpg
+hero_img: projects-gallery/hydrodip1.jpg
 ---

@@ -22,22 +22,6 @@
         <div class="grid grid-cols-2 gap-4">
             <!-- Subject Field -->
             <div>
-                <label for="printkeuze" class="block text-sm font-medium mb-4"></label>
-                <select id="printkeuze" name="printkeuze"
-                        class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75">
-                    <option selected>Printkeuze</option>
-                    <option value="CARBON">CARBON</option>
-                    <option value="SKULLS & FLAMES">SKULLS & FLAMES</option>
-                    <option value="CARTOON & GRAPHICS">CARTOON & GRAPHICS</option>
-                    <option value="HOUT">HOUT</option>
-                    <option value="CAMOUFLAGE">CAMOUFLAGE</option>
-                    <option value="DIEREN">DIEREN</option>
-                    <option value="METAAL & TECHNISCH">METAAL & TECHNISCH</option>
-                    <option value="STEEN">STEEN</option>
-                    <option value="OVERIG">OVERIG</option>
-                </select>
-            </div>
-            <div>
                 <label for="afwerking lak" class="block text-sm font-medium mb-4"></label>
                 <select id="afwerking lak" name="afwerking lak"
                         class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75">
@@ -46,11 +30,6 @@
                     <option value="MAT">MAT</option>
                 </select>
             </div>
-        </div>
-
-        <!-- Second Row: Subject and Telephone -->
-        <div class="grid grid-cols-2 gap-4">
-            <!-- staat field -->
             <div>
                 <label for="staat" class="block text-sm font-medium mb-4"></label>
                 <select id="staat" name="staat"
@@ -60,14 +39,21 @@
                     <option value="BESCHADIGD">BESCHADIGD</option>
                 </select>
             </div>
-
-            <!-- Telephone Field -->
+        </div>
+        <!-- Second Row: Subject and Telephone -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Total Field -->
             <div>
                 <label for="total" class="block text-sm font-medium mb-4"
                        placeholder="Totaal te dippen objecten"></label>
                 <input type="number" id="total" name="total"
                        class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
-                       placeholder="Totaal te dippen objecten">
+                       placeholder="Totaal te spuiten objecten">
+            </div>
+                    <!-- Telephone Field -->
+            <div>
+                <label for="telephone" class="block text-sm font-medium mb-4" placeholder="Telefoonnummer"></label>
+                <input type="tel" id="telephone" name="telephone" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Telefoonnummer">
             </div>
         </div>
 

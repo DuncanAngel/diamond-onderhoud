@@ -1,11 +1,11 @@
 ---
 id: 9d9ff26f-ac27-4cb7-abf8-8c83a415c575
 blueprint: page
-title: 'HYDRODIP NEDERLAND'
+title: 'GM HIGHLINE PAINTS'
 author: fdd841da-c4cc-40ce-b01b-886935f6568c
-template: pages/hydrodip-nederland
+template: pages/over-ons
 updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
-updated_at: 1742054786
+updated_at: 1744996346
 cta_title: 'WELKOM BIJ HYDRODIP NEDERLAND'
 cta_content: "Ferry en Mike (FM) hebben van deze uit de hand gelopen hobby hun werk gemaakt.                 Ferry is al jaren werkzaam in de autobusiness en heeft een passie voor motoren.                 Mike heeft al jaren ervaring met coatings en detailing. Daarnaast heeft hij een eindeloze passie voor                 auto's en motoren.                 Nu hebben zij hun krachten gebundeld en FM Car Treatments opgezet om uw voertuig te laten stralen als                 nooit tevoren!"
 cta_button_text: 'MAAK NU EEN AFSPRAAK!'
@@ -59,58 +59,118 @@ text_section:
         content:
           -
             type: text
-            text: 'Hydrodippen , ook wel water-transfer-printing genoemd, is een vorm van 3D printen, waarbij elke gewenste print kan worden overgebracht op een voorwerp. Dit gebeurt door middel van wateroverdracht, waardoor elk randje en kantjesnetjes omsloten wordt. Hierdoor kan men hele lastige vormen printen waar je met andere techniken niet bij kan. Denk bijvoorbeeld aan een rooster of een velg.'
+            marks:
+              -
+                type: bold
+            text: 'Waar vakmanschap, precisie en stijl samenkomen.'
           -
             type: hardBreak
+            marks:
+              -
+                type: bold
           -
             type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'De belangrijkste stap is een voorbehandeling. Dit wordt vaak onderschat, maar is de meest tijdrovende fase. Lichte schadeherstel-werkzaamheden vallen hier ook onder.'
+            text: 'Bij GM Highline Paints draait alles om kwaliteit en perfectie. Wij zijn gespecialiseerd in schadeherstel, custom paint jobs en het professioneel spuiten van velgen. Of het nu gaat om een klein parkeerdeukje, een volledige respray in een unieke kleur of het restylen van je velgen – wij zorgen voor een resultaat dat eruit springt.'
           -
             type: hardBreak
+          -
+            type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'De folie moet op een speciale onderlaag aangebracht worden voor het beste resultaat. Aangezien de meeste folies voor een deel transparant zijn, is de basiskleur bepalend voor het eindresultaat. Deze basiskleur kan een enkelvoudige kleur zijn, maar ook bijvoorbeeld een kleurverloop of parelmoer effect hebben. Ook speciale kameleon kleuren zijn mogelijk'
+            marks:
+              -
+                type: bold
+            text: 'Schadeherstel met oog voor detail'
           -
             type: hardBreak
           -
             type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'Vervolgens wordt er een folie op het water gelegd, met een print. Deze folie lost op, waardoor enkel de print op het wateroppervlak blijft drijven. Dan laat men het voorwerp in het water zakken, hierdoor hecht de inkt zich aan het voorwerp.'
+            text: 'Schade aan je voertuig is altijd vervelend. Daarom zorgen wij ervoor dat je auto er na herstel weer uitziet alsof er nooit iets gebeurd is. Wij werken met hoogwaardige producten, geavanceerde apparatuur en jarenlange ervaring. Van het herstellen van kleine krassen en deuken tot het volledig uitdeuken en herspuiten van carrosserieonderdelen: wij leveren vakwerk tot in de kleinste details.'
           -
             type: hardBreak
           -
             type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'nadat de inkt in de basiscoat is ge-etst vormt er een intensief spoel en droogproces.'
+            marks:
+              -
+                type: bold
+            text: 'Custom paint: maak het uniek'
           -
             type: hardBreak
           -
             type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'Uiteindelijk krijgt het voorwerp ook nog een hoogwaardige UV-bestendige blanke finish, naar wens hoogglans of mat kan zijn. Dot zorgt voor een perfecte eindresultaat.'
+            text: 'Wil je jouw voertuig echt laten opvallen? Dan ben je bij ons aan het juiste adres. Wij bieden custom paint in alle vormen: van subtiele kleurverlopen tot parelmoer, metallic en zelfs kameleon-effecten. Samen met jou bedenken we een ontwerp dat perfect past bij jouw stijl. Elk project is maatwerk, en jouw visie staat bij ons centraal.'
           -
             type: hardBreak
           -
             type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'Is hydrodippen duurzaam?'
+            marks:
+              -
+                type: bold
+            text: 'Velgen spuiten: strak en stijlvol'
           -
             type: hardBreak
           -
             type: hardBreak
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: 'Jazeker, het is net zo duurzaam als een hoogwaardige autolak op een moderne auto. We gebruiken enkel hoogwaardige producten en professionele gereedschappen, zoals in de automotive-schadeherstel.'
+            text: 'Velgen bepalen voor een groot deel de uitstraling van je auto. Bij [Naam Spuiterij] geven wij jouw velgen een nieuwe look – strak in de lak, beschermd tegen vuil en weersinvloeden. Of je nu kiest voor klassiek zilver, diepzwart, hoogglans, mat of een opvallende kleur: wij zorgen voor een professionele afwerking en duurzaamheid zoals je van een specialist mag verwachten.'
+          -
+            type: hardBreak
+          -
+            type: hardBreak
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Alleen het beste is goed genoeg'
+          -
+            type: hardBreak
+          -
+            type: hardBreak
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Wij werken uitsluitend met professionele lakken en gereedschappen, zoals ook gebruikt wordt in de automotive schadeherstel. Elk project – groot of klein – wordt met dezelfde precisie en passie uitgevoerd. Zo ben je verzekerd van een topresultaat waar je jarenlang van geniet.'
     text_title_left: false
     type: new_set
     enabled: true
-hero_img: headers/hydrodip-nederland-2.jpg
 is_external: false
 footer_bg_img: hexagon-bg-footer.png
 cta_bg_img: hexagon-bg-footer.png
