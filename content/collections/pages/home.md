@@ -5,7 +5,7 @@ title: HOME
 template: pages/home
 author: fdd841da-c4cc-40ce-b01b-886935f6568c
 updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
-updated_at: 1744995170
+updated_at: 1745154009
 is_current: true
 cta_text:
   -
@@ -98,5 +98,5 @@ gallery_img:
   - projects-gallery/hydrodip6.jpg
   - projects-gallery/hydrodip4.jpg
   - projects-gallery/hydrodip1.jpg
-hero_img: projects-gallery/hydrodip1.jpg
+hero_img: hydrodippen.png
 ---
