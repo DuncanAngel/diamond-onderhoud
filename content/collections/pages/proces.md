@@ -1,11 +1,12 @@
 ---
 id: a03892e1-2156-443c-8679-ade548094c3e
+published: false
 blueprint: page
-title: 'SPUIT PROCES'
+title: PROCES
 author: fdd841da-c4cc-40ce-b01b-886935f6568c
 template: pages/hydrodip-proces
 updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
-updated_at: 1744996686
+updated_at: 1747199022
 hexagon_image: hexagons/test.png
 hexagon_title: 'DETAILING, POLISHING & CLEANING'
 hexagon_text: 'Bij FM Car Treatments kunt u terecht voor exclusieve car detailing. U bent bij ons aan het juiste adres voor het laten opleven van uw auto. Bij detailing wordt gelet op de details. Zo worden veel dingen bij een normale wasbeurt overgeslagen en bij het verkeerd wassen worden juist veel beschadigingen gecreëerd. Er zijn veel imperfecties die uw auto kunnen beschadigen, zoals krassen, swirls, hologrammen, vlekken en uitdroging.  Wij pakken de problemen aan en zorgen dat uw auto zowel van binnen als van buiten weer als nieuw en beschermd is! Bescherming is namelijk belangrijk. Door bijvoorbeeld uw lak door ons te laten verzegelen met een keramische coating, kunnen wij blijvend voorkomen dat deze imperfecties opnieuw zullen terugkomen.'
@@ -111,11 +112,10 @@ hexagons:
           -
             type: text
             text: 'De dag van de aflevering is altijd een leuk moment en zorgen wij ervoor dat het object er spik en span bij staat. De glimlach op het gezicht van de klant is altijd weer leuk om te zien, daar doen we het uiteindelijk allemaal voor!'
-    hexagon_img_left: true
+    hexagon_img_left: false
     is_external: false
     type: new_set
     enabled: true
 is_external: false
-footer_bg_img: hexagon-bg-footer.png
-hero_img: img_0478.jpg
+hero_img: headers/ontwerp-zonder-titel-2-2.png
 ---

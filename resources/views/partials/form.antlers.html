@@ -1,45 +1,71 @@
-<form action="{{ form_link }}" method="POST" class="px-[250px] mx-auto p-6 bg-black text-white">
-    <!-- First Row: Name and Email -->
-    <div class="grid grid-cols-2 gap-4">
-        <!-- Name Field -->
-        <div>
-            <label for="name" class="block text-sm font-medium mb-4" placeholder="Naam"></label>
-            <input type="text" id="name" name="name" required class="rounded w-full p-3 bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Naam">
+<div class="bg-primary-200">
+    <form action="{{ form_link }}" method="POST" class="px-8 md:w-1/2 mx-auto p-6  text-white">
+        <!-- First Row: Name and Email -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Name Field -->
+            <div>
+                <label for="name" class="block text-sm font-medium mb-4" placeholder="Naam"></label>
+                <input type="text" id="name" name="name" required
+                class="rounded w-full p-3 bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Naam">
+            </div>
+
+            <!-- Email Field -->
+            <div>
+                <label for="email" class="block text-sm font-medium mb-4" placeholder="Email"></label>
+                <input type="email" id="email" name="email" required
+                class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Email">
+            </div>
         </div>
 
-        <!-- Email Field -->
-        <div>
-            <label for="email" class="block text-sm font-medium mb-4" placeholder="Email"></label>
-            <input type="email" id="email" name="email" required class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Email">
+        <!-- Second Row: Subject and Telephone -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- staat field -->
+            <div>
+                <label for="subject" class="block text-sm font-medium mb-4"></label>
+                <input type="text" id="subject" name="subject" required
+                class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Onderwerp">
+            </div>
+
+            <!-- Telephone Field -->
+            <div>
+                <label for="phone" class="block text-sm font-medium mb-4"
+                placeholder="Telefoonnummer"></label>
+                <input type="text" id="phone" name="phone"
+                class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Telefoonnummer">
+            </div>
+        </div>
+        <!-- Message Field -->
+    <div class="grid grid-cols-1 gap-4">
+        <div class="mb-4">
+            <label for="message" class="block text-sm font-medium mb-4" placeholder="Bericht"></label>
+            <textarea id="message" name="message" rows="5" required
+                class="w-full p-3 rounded bg-gray-700 border-gray-600 border focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Bericht"></textarea>
         </div>
     </div>
 
-    <!-- Second Row: Subject and Telephone -->
-    <div class="grid grid-cols-2 gap-4">
-        <!-- Subject Field -->
+        <!-- Honey Pot Field -->
         <div>
-            <label for="subject" class="block text-sm font-medium mb-4" placeholder="Onderwerp"></label>
-            <input type="text" id="subject" name="subject" required class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Onderwerp">
+            <label for="pets_name" class="hidden"
+                placeholder="Pets Name"></label>
+            <input type="checkbox" id="pets_name" name="_gotcha" class="hidden" tabindex="-1" autocomplete="false"
+                placeholder="Pets Name">
         </div>
 
-        <!-- Telephone Field -->
-        <div>
-            <label for="telephone" class="block text-sm font-medium mb-4" placeholder="Telefoonnummer"></label>
-            <input type="tel" id="telephone" name="telephone" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Telefoonnummer">
+        <!-- Privacy Link -->
+        <div class="mb-6 text-sm text-center">
+            <a href="#" class="text-primary-400 hover:underline">Privacy</a> - <a href="#"
+            class="text-primary-400 hover:underline">Voorwaarden</a>
         </div>
-    </div>
 
-    <!-- Message Field -->
-    <div class="mb-4">
-        <label for="message" class="block text-sm font-medium mb-4" placeholder="Bericht"></label>
-        <textarea id="message" name="message" rows="5" required class="w-full p-3 rounded bg-gray-700 border-gray-600 border focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Bericht"></textarea>
-    </div>
+        <!-- Submit Button -->
+        <button type="submit"
+                class="w-full bg-primary-500 text-white py-3 rounded-md hover:bg-primary-700 transition-colors">Verzenden
+        </button>
+    </form>
 
-    <!-- Privacy Link -->
-    <div class="mb-6 text-sm text-center">
-        <a href="#" class="text-primary-400 hover:underline">Privacy</a> - <a href="#" class="text-primary-400 hover:underline">Voorwaarden</a>
-    </div>
-
-    <!-- Submit Button -->
-    <button type="submit" class="w-full bg-primary-500 text-white py-3 rounded-md hover:bg-primary-700 transition-colors">Verzenden</button>
-</form>
+</div>

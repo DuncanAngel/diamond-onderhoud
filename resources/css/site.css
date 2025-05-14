@@ -3,3 +3,8 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+.card-overlay {
+    background-color: rgba(11, 3, 31, 0);
+    background-image: linear-gradient(to top, #2c3d50, rgba(73, 168, 227, 0) 29%);
+    position: absolute;
+}

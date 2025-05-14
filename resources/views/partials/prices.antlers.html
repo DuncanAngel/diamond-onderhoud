@@ -1,16 +1,16 @@
-<div class="flex flex-col items-center justify-center gap-8 bg-black py-12">
+<div class="flex flex-col items-center justify-center gap-8 bg-primary-300 py-12">
     <h2 class="text-white text-6xl text-center mb-8">{{ group_title }}</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
         {{ prices }}
         <div
-            class="text-center bg-black border border-1 border-solid border-primary-500 rounded-lg border-opacity-40 hover:border-primary-700 transition ease-in-out duration-100 hover:scale-105">
+            class="text-center bg-primary-300 border border-2 border-solid border-primary-900 rounded-lg border-opacity-40 hover:border-primary-700 transition ease-in-out duration-100 hover:scale-105">
             <a class="h-full w-full" href="{{ button_url }}">
                 <div class="pt-6 pb-4 px-4 flex flex-col justify-between items-center h-full">
                     <div>
                         <div class="relative w-[300px] h-[300px]">
                             {{ price_img }}
-                            <img src="{{ glide src="{url}" }}" alt="{{ price_title }}"
-                                 class="w-full h-full object-cover text-white">
+                                <img src="{{ glide src="{url}" }}" alt="{{ price_title }}"
+                                class="w-full h-full object-cover text-white">
                             {{ /price_img }}
                         </div>
                         <h2 class="my-4 text-2xl font-bold text-primary-500">{{ price_title }}</h2>
@@ -20,10 +20,10 @@
                             {{ includes }}
                             <li class="flex items-center space-x-2">
                                 <svg class="w-5 h-5 text-primary-500" fill="currentColor"
-                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
-                                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                          clip-rule="evenodd"></path>
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
                                 </svg>
                                 <span>{{ includes }}</span>
                             </li>

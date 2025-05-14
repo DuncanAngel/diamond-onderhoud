@@ -1,15 +1,49 @@
-<div class="flex flex-col items-center justify-center gap-8 bg-black py-12">
-    <h2 class="text-white text-6xl text-center mb-8">{{ group_title }}</h2>
-    <div class="flex flex-wrap justify-center gap-8">
+<div class="bg-primary-400 py-14 px-12">
+    <h2 class="text-white text-6xl text-center mb-14">{{ group_title }}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center gap-8 w-full">
         {{ hexagons }}
-            <a href="{{ hexagon_button_url }}"
-                {{ if is_external }}target="_blank" rel="noopener" {{ /if }}
-               class="m-10 group relative transition-transform hover:scale-105 h-full">
+            <a
+                href="{{ hexagon_button_url }}"
+                class="
+                    col-3
+                    rounded
+                    aspect-[9/12]
+                    relative
+                    text-white
+                    text-5xl
+                "
+                {{ if is_external }}
+                    target="_blank"
+                    rel="noopener"
+                {{ /if }}
+            >
+
                 {{ hexagon_img }}
-                <img src="{{ glide src="{url}" }}" alt="{{ hexagon_title }}" class="w-[512px] h-[512px] object-cover">
+                    <div
+                        style="background-image: url('{{ glide src="{url}" }}')"
+                        class="
+                            bg-cover
+                            bg-bottom
+                            z-10
+                            flex
+                            items-end
+                            justify-center
+                            h-full
+                            w-full
+                            hover:-translate-x-2
+                            hover:-translate-y-2
+                            transition
+                            ease-in-out
+                            duration-150
+                            absolute
+                            select-none
+                            rounded
+                    ">
+                        <div class="absolute card-overlay h-full w-full z-10 rounded"></div>
+                        <div class="z-30 absolute mb-4 rounded">{{ hexagon_title }}</div>
+                    </div>
                 {{ /hexagon_img }}
-                <h2 class="my-6 text-4xl text-center tracking-tight text-white">{{ hexagon_title }}</h2>
-                <div class="text-white text-center w-[512px]">{{ hexagon_content }}</div>
+                <div class="h-full w-full bg-white absolute rounded"></div>
             </a>
         {{ /hexagons }}
     </div>

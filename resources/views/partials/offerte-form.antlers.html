@@ -1,4 +1,4 @@
-<div class="bg-black">
+<div class="bg-primary-300">
     <form action="{{ form_link }}" method="POST" class="px-8 md:w-1/2 mx-auto p-6  text-white">
         <!-- First Row: Name and Email -->
         <div class="grid grid-cols-2 gap-4">
@@ -6,16 +6,16 @@
             <div>
                 <label for="name" class="block text-sm font-medium mb-4" placeholder="Naam"></label>
                 <input type="text" id="name" name="name" required
-                       class="rounded w-full p-3 bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
-                       placeholder="Naam">
+                class="rounded w-full p-3 bg-primary-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Naam">
             </div>
 
             <!-- Email Field -->
             <div>
                 <label for="email" class="block text-sm font-medium mb-4" placeholder="Email"></label>
                 <input type="email" id="email" name="email" required
-                       class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
-                       placeholder="Email">
+                class="w-full p-3 rounded bg-primary-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Email">
             </div>
         </div>
 
@@ -24,7 +24,7 @@
             <div>
                 <label for="afwerking lak" class="block text-sm font-medium mb-4"></label>
                 <select id="afwerking lak" name="afwerking lak"
-                        class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75">
+                        class="w-full p-3 rounded bg-primary-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75">
                     <option selected>AFWERKING BLANKE LAK</option>
                     <option value="GLANS">GLANS</option>
                     <option value="MAT">MAT</option>
@@ -33,7 +33,7 @@
             <div>
                 <label for="staat" class="block text-sm font-medium mb-4"></label>
                 <select id="staat" name="staat"
-                        class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75">
+                        class="w-full p-3 rounded bg-primary-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75">
                     <option selected>STAAT</option>
                     <option value="ONBESCHADIGD">ONBESCHADIGD</option>
                     <option value="BESCHADIGD">BESCHADIGD</option>
@@ -45,36 +45,35 @@
             <!-- Total Field -->
             <div>
                 <label for="total" class="block text-sm font-medium mb-4"
-                       placeholder="Totaal te dippen objecten"></label>
+                placeholder="Totaal te dippen objecten"></label>
                 <input type="number" id="total" name="total"
-                       class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
-                       placeholder="Totaal te spuiten objecten">
+                class="w-full p-3 rounded bg-primary-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+                placeholder="Totaal te spuiten objecten">
             </div>
                     <!-- Telephone Field -->
             <div>
                 <label for="telephone" class="block text-sm font-medium mb-4" placeholder="Telefoonnummer"></label>
-                <input type="tel" id="telephone" name="telephone" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Telefoonnummer">
+                <input type="tel" id="telephone" name="telephone" class="w-full p-3 rounded bg-primary-900 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75" placeholder="Telefoonnummer">
             </div>
         </div>
 
 <!-- Message Field -->
-<div class="mb-4">
-    <label for="message" class="block text-sm font-medium mb-4" placeholder="Bericht"></label>
-    <textarea id="message" name="message" rows="5" required
-              class="w-full p-3 rounded bg-gray-700 border-gray-600 border focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
-              placeholder="Bericht"></textarea>
-</div>
+        <div class="mb-4">
+            <label for="message" class="block text-sm font-medium mb-4" placeholder="Bericht"></label>
+            <textarea id="message" name="message" rows="5" required
+            class="w-full p-3 rounded bg-primary-900 border-gray-600 border focus:outline-none focus:ring-2 focus:ring-primary-500 transition ease-in-out duration-75"
+            placeholder="Bericht"></textarea>
+        </div>
 
 <!-- Privacy Link -->
-<div class="mb-6 text-sm text-center">
-    <a href="#" class="text-primary-400 hover:underline">Privacy</a> - <a href="#"
-                                                                          class="text-primary-400 hover:underline">Voorwaarden</a>
-</div>
+        <div class="mb-6 text-sm text-center">
+            <a href="#" class="text-primary-400 hover:underline">Privacy</a> - <a href="#"
+            class="text-primary-400 hover:underline">Voorwaarden</a>
+        </div>
 
 <!-- Submit Button -->
-<button type="submit"
+        <button type="submit"
         class="w-full bg-primary-500 text-white py-3 rounded-md hover:bg-primary-700 transition-colors">Verzenden
-</button>
-</form>
-
+        </button>
+    </form>
 </div>

@@ -8,5 +8,4 @@ updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
 updated_at: 1742046456
 cta_img_left: false
 is_external: false
-footer_bg_img: hexagon-bg-footer.png
 ---

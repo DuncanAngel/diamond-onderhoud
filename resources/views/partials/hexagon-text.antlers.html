@@ -1,30 +1,30 @@
 {{ hexagons }}
     {{ if hexagon_img_left }}
-        <section class="bg-black text-white">
+        <section class="bg-primary-400 text-white">
             <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                 {{ hexagon_img }}
-                <img class="w-full rounded-lg"
-                     src="{{ glide src="{url}" }}"
-                     alt="cta image">
-                {{ /hexagon_img }}
+                        <img class="w-full rounded-lg"
+                        src="{{ glide src="{url}" }}"
+                        alt="cta image">
+                    {{ /hexagon_img }}
                 <div class="mt-4 md:mt-0">
-                    <h2 class="mb-4 text-4xl text-center tracking-tight font-extrabold text-primary-500">{{ hexagon_title }}</h2>
-                    <div class="mb-6 text-center text-white text-xl [&_ol]:list-decimal [&_ol]:text-left [&_ol]:pl-5">{{ hexagon_content }}</div>
+                    <h2 class="mb-4 text-4xl text-center tracking-tight font-extrabold text-white">{{ hexagon_title }}</h2>
+                    <div class="mb-6 text-center text-primary-100 text-xl [&_ol]:list-decimal [&_ol]:text-left [&_ol]:pl-5">{{ hexagon_content }}</div>
                 </div>
             </div>
         </section>
 {{ else }}
-        <section class="bg-black text-white">
+        <section class="bg-primary-300 text-white">
             <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
                 <div class="mt-4 md:mt-0">
-                    <h2 class="mb-6 text-4xl text-center tracking-tight font-extrabold text-primary-500">{{ hexagon_title }}</h2>
-                    <div class="mb-6 text-center text-white text-xl [&_ol]:list-decimal [&_ol]:text-left [&_ol]:pl-5">{{ hexagon_content }}</div>
+                    <h2 class="mb-6 text-4xl text-center tracking-tight font-extrabold text-white">{{ hexagon_title }}</h2>
+                    <div class="mb-6 text-center text-primary-50 text-xl [&_ol]:list-decimal [&_ol]:text-left [&_ol]:pl-5">{{ hexagon_content }}</div>
                 </div>
-                {{ hexagon_img }}
-                <img class="w-full rounded-lg"
-                     src="{{ glide src="{url}" }}"
-                     alt="cta image">
-                {{ /hexagon_img }}
+                    {{ hexagon_img }}
+                        <img class="w-full rounded-lg"
+                        src="{{ glide src="{url}" }}"
+                        alt="cta image">
+                    {{ /hexagon_img }}
             </div>
         </section>
     {{ /if }}
