@@ -8,12 +8,6 @@ tree:
     title: 'OVER ONS'
     url: /over-ons
   -
-    id: 0e2ab42d-ef2e-478d-b15d-36fabebe7605
-    title: PROJECTEN
-    url: 'https://www.instagram.com/hydrodipnederland/'
-    data:
-      external_link: true
-  -
     id: 0c82fc22-f345-4a72-9669-f2659b37b7d9
     title: CONTACT
     url: /contact

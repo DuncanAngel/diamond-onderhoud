@@ -5,7 +5,7 @@ title: HOME
 template: pages/home
 author: fdd841da-c4cc-40ce-b01b-886935f6568c
 updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
-updated_at: 1747198971
+updated_at: 1747252771
 is_current: true
 cta_text:
   -
@@ -22,8 +22,8 @@ cta_button_url: /over-ons
 cta_content: 'Dé stukadoor en spuitspecialist van Den Haag.'
 gallery_title: 'NEWS & PROJECTS'
 gallery_button_content: 'CHECK ONZE PROJECTEN'
-gallery_button_url: 'https://www.instagram.com/hydrodipnederland/'
-gallery_button_text: 'BEKIJK ONZE PROJECTEN'
+gallery_button_url: /over-ons
+gallery_button_text: 'Over ons'
 cta_img_left: false
 text_title_left: false
 hexagon_img_left: false
@@ -68,7 +68,7 @@ hexagons:
     is_external: false
     hexagon_img: img3.jpeg
 group_title: POPULAIR
-is_external: true
+is_external: false
 cta_bg_img: headers/watercolour-light-blue-background.png
 cta_image: projects-gallery/img2.jpeg
 hero_img: headers/ontwerp-zonder-titel-2-2.png
