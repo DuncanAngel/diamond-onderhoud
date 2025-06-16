@@ -4,7 +4,61 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ title ?? site:name }}</title>
+
+        <!-- Primary Meta Tags -->
+        <title>
+            {{ title ?? "Diamond Onderhoud - Specialist in Stukadoorswerk en
+            Spuitwerk | Den Haag" }}
+        </title>
+        <meta name="title" content="{{ title ?? "Diamond Onderhoud - Specialist
+        in Stukadoorswerk en Spuitwerk | Den Haag" }}" />
+        <meta
+            name="description"
+            content="Specialist in stukadoorswerk, spuitwerk en latex spuiten in Den Haag en omstreken. 20+ jaar ervaring in vakkundig stucwerk, airless spuitwerk en latex spuiten voor woningen en bedrijfspanden."
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="{{ config:app:url }}{{ current_url }}"
+        />
+        <meta property="og:title" content="{{ title ?? "Diamond Onderhoud -
+        Specialist in Stukadoorswerk en Spuitwerk | Den Haag" }}" />
+        <meta
+            property="og:description"
+            content="Specialist in stukadoorswerk, spuitwerk en latex spuiten in Den Haag en omstreken. 20+ jaar ervaring in vakkundig stucwerk, airless spuitwerk en latex spuiten voor woningen en bedrijfspanden."
+        />
+        <meta property="og:image" content="{{ config:app:url }}/og-image.jpg" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:url"
+            content="{{ config:app:url }}{{ current_url }}"
+        />
+        <meta name="twitter:title" content="{{ title ?? "Diamond Onderhoud -
+        Specialist in Stukadoorswerk en Spuitwerk | Den Haag" }}" />
+        <meta
+            name="twitter:description"
+            content="Specialist in stukadoorswerk, spuitwerk en latex spuiten in Den Haag en omstreken. 20+ jaar ervaring in vakkundig stucwerk, airless spuitwerk en latex spuiten voor woningen en bedrijfspanden."
+        />
+        <meta
+            name="twitter:image"
+            content="{{ config:app:url }}/og-image.jpg"
+        />
+
+        <!-- Additional SEO -->
+        <meta
+            name="keywords"
+            content="stukadoor, stukadoorswerk, spuitwerk, latex spuiten, Den Haag, Rijswijk, Voorburg, Leidschendam, Delft, Westland, sierpleister, airless spuitwerk, wandafwerking, plafondafwerking"
+        />
+        <meta name="author" content="Diamond Onderhoud" />
+        <meta name="geo.region" content="NL-ZH" />
+        <meta name="geo.placename" content="Den Haag" />
+        <link rel="canonical" href="{{ config:app:url }}{{ current_url }}" />
+
+        <!-- Existing head content -->
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

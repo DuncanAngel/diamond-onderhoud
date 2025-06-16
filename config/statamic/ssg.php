@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Base URL
@@ -40,6 +39,11 @@ return [
 
     'copy' => [
         public_path('build') => 'build',
+        public_path('favicon-16x16.png') => 'favicon-16x16.png',
+        public_path('favicon-32x32.png') => 'favicon-32x32.png',
+        public_path('apple-touch-icon.png') => 'apple-touch-icon.png',
+        public_path('site.webmanifest') => 'site.webmanifest',
+        public_path('og-image.jpg') => 'og-image.jpg',
     ],
 
     'symlinks' => [
@@ -114,5 +118,4 @@ return [
     */
 
     'failures' => false, // 'errors' or 'warnings'
-
 ];
