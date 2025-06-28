@@ -1,21 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site:short_locale }}">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Primary Meta Tags -->
+        <title>
+            {{ "Diamond Onderhoud - Stukadoorswerk en Spuitwerk | Den Haag" }}
+        </title>
+        <meta name="title" content=" {{ "Diamond Onderhoud - Stukadoorswerk en
+        Spuitwerk | Den Haag" }} />
+        <meta
+            name="description"
+            content="Professioneel stukadoorsbedrijf in Den Haag, gespecialiseerd in spuitwerk en stukadoorswerk. Wij bieden complete wand- en plafondafwerking voor particulieren en bedrijven in Den Haag en omstreken. 20+ jaar vakmanschap."
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="{{ config:app:url }}{{ current_url }}"
+        />
+        <meta property="og:title" content="{{ "Diamond Onderhoud -
+        Stukadoorswerk en Spuitwerk | Den Haag" }}" />
+        <meta
+            property="og:description"
+            content="Professioneel stukadoorsbedrijf in Den Haag, gespecialiseerd in spuitwerk en stukadoorswerk. Wij bieden complete wand- en plafondafwerking voor particulieren en bedrijven in Den Haag en omstreken. 20+ jaar vakmanschap."
+        />
+        <meta property="og:image" content="{{ config:app:url }}/og-image.jpg" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:url"
+            content="{{ config:app:url }}{{ current_url }}"
+        />
+        <meta name="twitter:title" content="{{ "Diamond Onderhoud -
+        Stukadoorswerk en Spuitwerk | Den Haag" }}" />
+        <meta
+            name="twitter:description"
+            content="Professioneel stukadoorsbedrijf in Den Haag, gespecialiseerd in spuitwerk en stukadoorswerk. Wij bieden complete wand- en plafondafwerking voor particulieren en bedrijven in Den Haag en omstreken. 20+ jaar vakmanschap."
+        />
+        <meta
+            name="twitter:image"
+            content="{{ config:app:url }}/og-image.jpg"
+        />
+
+        <!-- Additional SEO -->
+        <meta
+            name="keywords"
+            content="stukadoor, stukadoorswerk, spuitwerk, latex spuiten, Den Haag, Rijswijk, Voorburg, Leidschendam, Delft, Westland, sierpleister, airless spuitwerk, wandafwerking, plafondafwerking"
+        />
+        <meta name="author" content="Diamond Onderhoud" />
+        <meta name="geo.region" content="NL-ZH" />
+        <meta name="geo.placename" content="Den Haag" />
+        <link rel="canonical" href="https://www.diamondonderhoud.nl" />
+
+        <!-- Existing head content -->
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+            rel="stylesheet"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Diamond Onderhoud",
+                "image": "{{ config:app:url }}/og-image.jpg",
+                "url": "{{ config:app:url }}",
+                "telephone": "06-21409474",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Hugo Verrieststraat 45",
+                    "addressLocality": "Den Haag",
+                    "addressRegion": "ZH",
+                    "postalCode": "2524CB",
+                    "addressCountry": "NL"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "52.0547296",
+                    "longitude": "4.3162654"
+                },
+                "areaServed": {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "52.0547296",
+                        "longitude": "4.3162654"
+                    },
+                    "geoRadius": 25000
+                },
+                "description": "Professioneel stukadoorsbedrijf in Den Haag, gespecialiseerd in spuitwerk en stukadoorswerk. Wij bieden complete wand- en plafondafwerking voor particulieren en bedrijven in Den Haag en omstreken. 20+ jaar vakmanschap.",
+                "priceRange": "€€"
+            }
+        </script>
     </head>
-    <body class="bg-gray-200 leading-normal text-gray-800" style="font-family: teko">
-        {{ partial:navbar }}
-        {{ partial:hero }}
-        {{ template_content }}
-        {{ partial:footer }}
+    <body
+        class="bg-gray-200 leading-normal text-gray-800"
+        style="font-family: teko"
+    >
+        {{ partial:navbar }} {{ partial:hero }} {{ template_content }} {{
+        partial:footer }}
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </body>
 </html>
