@@ -5,7 +5,7 @@ title: 'OVER ONS'
 author: fdd841da-c4cc-40ce-b01b-886935f6568c
 template: pages/over-ons
 updated_by: fdd841da-c4cc-40ce-b01b-886935f6568c
-updated_at: 1747199711
+updated_at: 1751554316
 cta_title: 'WELKOM BIJ ONS'
 cta_content: 'Heeft u plannen om te verbouwen of uw woning op te frissen? Neem contact met ons op en ontvang snel een offerte op maat. Wij denken graag met u mee!'
 cta_button_text: 'MAAK NU EEN AFSPRAAK!'
@@ -137,8 +137,6 @@ text_section:
     type: new_set
     enabled: true
 is_external: false
-cta_bg_img: headers/watercolour-light-blue-background.png
-hero_img: headers/ontwerp-zonder-titel-2-2.png
-footer_bg_img: headers/watercolour-light-blue-background.png
-cta_image: img10.jpeg
+hero_img: headers/ontwerp-zonder-titel-2-2-min.png
+footer_bg_img: headers/watercolour-light-blue-background-min.png
 ---
